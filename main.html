@@ -7,7 +7,105 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>The genger Game</h2>
-    <h1>done</h1>
+    <!-- <input type="number" id="zip" onblur="call()">
+    <input type="text" readonly id="city"> -->
+
+
+
+<!-- 
+    <p id="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium ipsa adipisci quibusdam at, minus delectus dignissimos ut aliquam, aliquid animi, quisquam harum eaque sed id aut. Harum, numquam in.
+    </p>
+    <a href="#" onclick="call()">click me</a> -->
+
+<div>
+    <strong id="min">0</strong>
+    <!-- <strong id="sec">0</strong>
+    <strong id="mil">0</strong> -->
+    <br><br>
+    <button onclick="start()">start</button>
+    <!-- <button onclick="start()">stop</button>
+    <button onclick="stop()">restart</button> -->
+    
+</div>
+
+
+
+  <script>
+
+      var interval ;
+      var mil;
+    var min;
+    var sec;
+
+    function timer(){
+
+        var mil = document.getElementById('mil');
+        // var hsec = document.getElementById('sec');
+        // var hmin = document.getElementById('min');
+
+
+        mil.innerText=++mil;
+        if(mil>100){
+            mil=0;
+            mil.innerText=mil;
+
+
+        }
+
+    }
+    function start(){
+        interval = setInterval(timer,100);
+    }
+
+
+
+
+
+    // function call(){
+    
+    //     var a = '<h1>ahmed Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore libero dolor accusantium! Fugiat est saepe veniam iure expedita quas fugit accusamus beatae mollitia ratione. Vitae error nihil omnis eaque molestias.</h1>'
+    //     document.getElementById('data').innerHTML = a; 
+    // }
+
+
+
+
+
+
+    //   function call(){
+    //       var a = document.getElementById('zip').value;
+    //       var city;
+    //     switch(a){
+    //         case '1':
+    //         city='hyderabad';
+    //         break;
+
+    //         case '2':
+    //         city='karachi';
+    //         break;
+
+    //         case '3':
+    //         city='lahore';
+    //         break;
+
+    //         case '4':
+    //         city='multan';
+    //         break;
+
+    //         case '5':
+    //         city='nawabshah';
+    //         break;
+
+    //         default:
+    //         city="unknown";
+    //         break;
+    //     }
+    //     document.getElementById('city').value=city;
+    //   }
+
+
+
+  </script>
 </body>
 </html>
